@@ -45,12 +45,11 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
+function copy(array){
   /*your code here*/
+  let copy = originalFlavors.slice();
+  return copy;
 }    
-
-
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -64,9 +63,16 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
+function is31Flavors(array){
  /*your code here*/
  //conditional
+ for(let i = 0; i < originalFlavors.length; i++){
+   if (array.length === 31){
+   return true;
+   }else if (array.length !== 31){
+     return false;
+   }
+ }
  // if array.length is 31 return true else return false
 }
 
@@ -83,10 +89,12 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
+function addFlavor(originalFlavors){
  /*your code here*/
  // use unshift to add the string to the front of the array
+ originalFlavors.unshift('Rainbow Sherbert');
  // return the array
+ return originalFlavors;
 }
 
 
@@ -101,10 +109,12 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 // 1 parameter - array
-function removeLastFlavor(/*your code here*/){
+function removeLastFlavor(originalFlavors){
  /*your code here*/
  // use .pop to remove the last item
+ originalFlavors.pop("Vanilla Burnt Almond");
  //return the array
+ return originalFlavors;
 }
 
 
@@ -172,7 +182,7 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(array, string){
+  function filterByWord(array, string){
   //make a new array to push our results to
   const filteredArray = [];
   //we need to write a loop that will check every item inside the array
@@ -185,10 +195,7 @@ function filterByWord(array, string){
   }
   //outside of out loop so that our loop does not break we want to return results
   return filteredArray;
-  //gghghgh
 }
-
-console.log(filteredByWord(originalFlavors, 'Chocolate'));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
