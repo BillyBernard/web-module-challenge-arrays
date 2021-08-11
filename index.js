@@ -66,6 +66,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 function is31Flavors(/*your code here*/){
  /*your code here*/
+ //conditional
+ // if array.length is 31 return true else return false
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -83,6 +85,8 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(/*your code here*/){
  /*your code here*/
+ // use unshift to add the string to the front of the array
+ // return the array
 }
 
 
@@ -96,9 +100,11 @@ Use the removeLastFlavor function below to do the following:
 
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
-
+// 1 parameter - array
 function removeLastFlavor(/*your code here*/){
  /*your code here*/
+ // use .pop to remove the last item
+ //return the array
 }
 
 
@@ -113,9 +119,10 @@ Use the getFlavorByIndex function below to do the following:
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
-
+// 2 parameter - array, index
 function getFlavorByIndex(/*your code here*/){
   /*your code here*/
+  //  return array[index]
 }
 
 
@@ -133,8 +140,13 @@ Use the removeFlavorByName function below to do the following:
 
   HINT: You can use .splice() for this
 */
-
+// 2 parameter array , string
 function removeFlavorByName(/*your code here*/){
+  // loop through the array and check each index for each string
+  // conditional that checks for an exact match ===
+  // if the item matches the string remove the item at that specific index .splice - index (i) and the number of items to delete
+
+  //outside of the loop return the array
   /*your code here*/
 }
 
