@@ -185,6 +185,7 @@ function filterByWord(array, string){
   }
   //outside of out loop so that our loop does not break we want to return results
   return filteredArray;
+  //gghghgh
 }
 
 console.log(filteredByWord(originalFlavors, 'Chocolate'));
